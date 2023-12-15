@@ -1,0 +1,145 @@
+:root{
+    --primario: #70422c;
+    --secundario: #bb9486(54, 54, 54);
+    --terciario: #FFD9B7;
+    --blanco: #FFF;
+    --negro: #000;
+   }
+
+
+.body{
+    background-color: #FFD9B7;
+}
+
+.navbar{
+    background-color: var(--primario) !important;
+}
+
+.navbar-nav a{
+    color: #bb9486;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.presentacion-txt{
+    font-size: 20px;
+    margin: 1px 150px 0px;
+}
+
+.presentacion-logo {
+    text-align: center;
+    margin: 10px;
+    justify-content: center;
+}
+
+.presentacion-perfil{
+    border-radius: 150px;
+    border:2px solid #fff;
+    margin: 5px;
+}
+
+.sesiones{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    padding: 25px;
+}
+
+.card{
+    margin: 10px;
+    border:1px solid var(--terciario);
+    border-radius: 15px;
+}
+
+@media (max-width: 980px) {
+    .sesiones{
+        display: block;
+        justify-content: center;
+    }
+
+    .card{
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+    }
+
+    .card:hover{
+        transform: scale(1);
+    }   
+  }
+
+  @media (max-width: 500px){
+
+    .presentacion-logo img{
+        width: 260px;
+        height: 130px;
+    }
+  }
+
+  @media (max-width: 500px){
+
+    .sesiones{
+        margin: 0px;
+        padding: 20px;
+    }
+
+    .card{
+        margin: 30px;
+    }
+  }
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card img{
+    border-radius: 15px;
+}
+
+.card-bg{
+    background-color: #bb9486;
+}
+
+ .card-bg h5{
+    color: #FFD9B7;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-bg p{
+    color: #fff;
+    text-align: center;
+}
+
+.ul-bg{
+    background-color: #E1D4BB;
+}
+
+.btn-ver{
+    border: 3px solid #E1D4BB;
+    border-radius: 10px;
+    color: #FFD9B7;
+    font-weight: bold;
+}
+
+.btn-ver:hover{
+    color: var(--primario);
+    border: 3px solid var(--primario);
+}
+
+.btn-agendar{
+    border: 2px solid #E1D4BB;
+    border-radius: 10px;
+    color: var(--terciario);
+    font-weight: bold;
+}
+
+.btn-agendar img{
+    color: var(--terciario);
+}
+
+.btn-agendar:hover{
+    color: #E1D4BB;
+    background-color: #70422c;
+}
